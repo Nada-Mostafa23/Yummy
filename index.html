@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="side-menu vh-100 z-3 position-fixed d-flex top-0">
+        <div class="sideBar d-flex flex-column justify-content-between vh-100 p-4">
+            <div class="side-navbar">
+                <ul class="list-unstyled text-white">
+                    <li id="clickSearch" class="py-2 nav-link position-relative cursor">Search</li>
+                    <li id="clickCateg" class="py-2 nav-link position-relative cursor">Categories</li>
+                    <li id="clickArea" class="py-2 nav-link position-relative cursor">Area</li>
+                    <li id="clickIng" class="py-2 nav-link position-relative cursor">Ingredients</li>
+                    <li id="clickCont" class="py-2 nav-link position-relative cursor">Contact Us</li>
+                </ul>
+            </div>
+            <div class="sideFooter text-white">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="content">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="side-header d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img src="images/logo.png" alt="photo of logo">
+            <div class="iconOpen">
+                <i class="fa-solid open fa-align-justify iconOpen cursor"></i>
+                <i class="d-none close fa-xmark"></i>
+            </div>
+            <div class="d-flex flex-column ">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row mt-5 g-4" id="data">
+        </div>
+    </div>
+
+
+    <div class="container mt-5 d-none" id="searchremove">
+        <div class="row g-4 d-flex" id="searchData">
+
+        </div>
+    </div>
+
+    <div>
+        <div class="container ">
+            <div class="row py-5 g-4 d-flex" id="rowDataSearch">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container d-none " id="categbage">
+        <div class="row g-5 mt-5 d-flex" id="categoryData">
+
+        </div>
+    </div>
+
+
+    <section class="detailsCategory text-center">
+        <div class="container">
+            <div class="row g-4 mt-5" id="category"></div>
+        </div>
+    </section>
+
+
+    <section class="mt-5 d-none" id="formclick">
+        <div class="container text-center ">
+            <div class="row" id="rowData">
+                <div class="col-md-6">
+                    <input id="nameInput" type="text" class="form-control mt-4" placeholder="Enter Your Name">
+                </div>
+                <div class="col-md-6">
+                    <input id="emailInput" type="email" class="form-control mt-4" placeholder="Enter Your Email">
+                </div>
+                <div class="col-md-6">
+                    <input id="phoneInput" type="number" class="form-control mt-4" placeholder="Enter Your Phone">
+                </div>
+                <div class="col-md-6">
+                    <input id="ageInput" type="number" class="form-control mt-4" placeholder="Enter Your Age">
+                </div>
+                <div class="col-md-6">
+                    <input id="passwordInput" type="password" class="form-control mt-4"
+                        placeholder="Enter Your password">
+                </div>
+                <div class="col-md-6">
+                    <input id="rePasswordInput" type="password" class="form-control mt-4" placeholder="Repassword">
+                </div>
+            </div>
+            <button class="btn btn-outline-danger mt-3 " onclick="btnClick()" id="submitBtn" disabled>Submit</button>
+        </div>
+    </section>
+
+    <section class="details mt-5 text-white">
+        <div class="container">
+            <div class="row" id="dataDetails">
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="container  text-white d-none" id="areaClick">
+        <div class="row g-4 py-5 mt-5" id="rowArea">
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-4 py-4 mt-5" id="detailsArea">
+
+        </div>
+    </div>
+
+
+
+    <div class="container d-none" id="ingclick">
+        <div class="row g-4 py-4 mt-5" id="ingred">
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-4 py-4 mt-5" id="ingredDetails">
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
